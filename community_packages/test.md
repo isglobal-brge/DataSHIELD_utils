@@ -20,3 +20,16 @@
 <TD>The package is intended to be a collection of methods for microbiome analysis. Currently methods are wrappers around methods provided by the “vegan”. Currently the methods being supported are: <ul><li>item1</li><li>item2</li></ul></TD>
 </TR>
 </TABLE>
+
+<table>
+  <tr>
+    <td>100</td>
+    <td>200</td>
+    <td>300</td>
+  </tr>
+  <tr>
+    <td>400</td>
+    <td>500</td>
+    <td>600</td>
+  </tr>
+</table>
