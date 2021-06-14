@@ -17,6 +17,6 @@
 
 <TABLE BORDER="0">
 <TR>
-<TD>Cell contents</TD>
+<TD>The package is intended to be a collection of methods for microbiome analysis. Currently methods are wrappers around methods provided by the “vegan”. Currently the methods being supported are: <ul><li>item1</li><li>item2</li></ul></TD>
 </TR>
 </TABLE>
