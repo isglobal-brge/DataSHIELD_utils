@@ -15,7 +15,7 @@
 |:-|
 
 
-<TABLE BORDER="2">
+<TABLE BORDER="0">
 <TR>
 <TD>Cell contents</TD>
 </TR>
