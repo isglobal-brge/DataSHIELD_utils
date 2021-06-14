@@ -38,3 +38,60 @@
 </tr>
 </table>
 
+## How to contact developer institution/team/individual
+<table>
+<tr>
+<td>Stuart Wheater (stuart.wheater@newcastle.ac.uk)
+</td>
+</tr>
+</table>
+
+## Latest version
+<table>
+<tr>
+<td>1.0.2
+</td>
+</tr>
+</table>
+
+## Type distribution licence
+<table>
+<tr>
+<td>Apache License 2.0
+</td>
+</tr>
+</table>
+
+## Methods of obtaining package
+### CRAN Address
+<table>
+<tr>
+<td>-
+</td>
+</tr>
+</table>
+
+### GitHub account, repository and branch/tag
+<table>
+<tr>
+<td>https://github.com/StuartWheater/dsMicrobiome.git <br>
+https://github.com/StuartWheater/dsMicrobiomeClient.git
+</td>
+</tr>
+</table>
+
+## What R packages do the packages depend on?
+<table>
+<tr>
+<td>dsMicrobiome
+</td>
+<td>vegan (≥ 2.5-7)
+</td>
+</tr>
+<tr>
+<td>dsMicrobiomeClient
+</td>
+<td>DSI (≥ 1.2.0)
+</td>
+</tr>
+</table>
