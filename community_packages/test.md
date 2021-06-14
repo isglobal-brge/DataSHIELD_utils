@@ -5,6 +5,7 @@
 </td>
 </tr>
 </table>
+
 ## Name of server-side packages
 <table>
 <tr>
@@ -12,6 +13,7 @@
 </td>
 </tr>
 </table>
+
 ## Name of client-side packages
 <table>
 <tr>
@@ -19,6 +21,7 @@
 </td>
 </tr>
 </table>
+
 ## Date this information was late updated/checked
 <table>
 <tr>
