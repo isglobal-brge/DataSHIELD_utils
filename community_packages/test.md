@@ -21,15 +21,17 @@
 </TR>
 </TABLE>
 
-<table>
-  <tr>
-    <td>100</td>
-    <td>200</td>
-    <td>300</td>
-  </tr>
-  <tr>
-    <td>400</td>
-    <td>500</td>
-    <td>600</td>
-  </tr>
+<table class="table table-striped table-borderless">
+<thead>
+<tr>
+<th scope="col">Pos</th>
+<th scope="col">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">1</th>
+<td>Adam</td>
+</tr>
+</tbody>
 </table>
