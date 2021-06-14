@@ -17,6 +17,6 @@
 
 <TABLE BORDER="2">
 <TR>
-<TD WIDTH="100" HEIGHT="80">Cell contents</TD>
+<TD>Cell contents</TD>
 </TR>
 </TABLE>
