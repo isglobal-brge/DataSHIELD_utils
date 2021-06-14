@@ -3,7 +3,7 @@ GTEx;gene;http://duffel.rail.bio/recount/v2/SRP012682/rse_gene_adipose_tissue.Rd
 GTEx;gene;http://duffel.rail.bio/recount/v2/SRP012682/rse_gene_adrenal_gland.Rdata;adrenal_gland;;;;;
 GTEx;gene;http://duffel.rail.bio/recount/v2/SRP012682/rse_gene_bladder.Rdata;bladder;;;;;
 GTEx;gene;http://duffel.rail.bio/recount/v2/SRP012682/rse_gene_blood_vessel.Rdata;blood_vessel;;;;;
-GTEx;gene;http://duffel.rail.bio/recount/v2/SRP012682/rse_gene_blood.Rdata;blood_vessel;;;;;
+GTEx;gene;http://duffel.rail.bio/recount/v2/SRP012682/rse_gene_blood.Rdata;blood;;;;;
 GTEx;gene;http://duffel.rail.bio/recount/v2/SRP012682/rse_gene_bone_marrow.Rdata;bone_marrow;;;;;
 GTEx;gene;http://duffel.rail.bio/recount/v2/SRP012682/rse_gene_brain.Rdata;brain;;;;;
 GTEx;gene;http://duffel.rail.bio/recount/v2/SRP012682/rse_gene_breast.Rdata;breast;;;;;
@@ -34,7 +34,7 @@ GTEx;exon;http://duffel.rail.bio/recount/v2/SRP012682/rse_exon_adipose_tissue.Rd
 GTEx;exon;http://duffel.rail.bio/recount/v2/SRP012682/rse_exon_adrenal_gland.Rdata;adrenal_gland;;;;;
 GTEx;exon;http://duffel.rail.bio/recount/v2/SRP012682/rse_exon_bladder.Rdata;bladder;;;;;
 GTEx;exon;http://duffel.rail.bio/recount/v2/SRP012682/rse_exon_blood_vessel.Rdata;blood_vessel;;;;;
-GTEx;exon;http://duffel.rail.bio/recount/v2/SRP012682/rse_exon_blood.Rdata;blood_vessel;;;;;
+GTEx;exon;http://duffel.rail.bio/recount/v2/SRP012682/rse_exon_blood.Rdata;blood;;;;;
 GTEx;exon;http://duffel.rail.bio/recount/v2/SRP012682/rse_exon_bone_marrow.Rdata;bone_marrow;;;;;
 GTEx;exon;http://duffel.rail.bio/recount/v2/SRP012682/rse_exon_brain.Rdata;brain;;;;;
 GTEx;exon;http://duffel.rail.bio/recount/v2/SRP012682/rse_exon_breast.Rdata;breast;;;;;
