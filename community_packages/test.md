@@ -15,23 +15,10 @@
 |:-|
 
 
-<TABLE BORDER="0">
-<TR>
-<TD>The package is intended to be a collection of methods for microbiome analysis. Currently methods are wrappers around methods provided by the “vegan”. Currently the methods being supported are: <ul><li>item1</li><li>item2</li></ul></TD>
-</TR>
-</TABLE>
-
-<table class="table table-striped table-borderless">
-<thead>
+<table>
 <tr>
-<th scope="col">Pos</th>
-<th scope="col">Name</th>
+<td>The package is intended to be a collection of methods for microbiome analysis. Currently methods are wrappers around methods provided by the “vegan”. Currently the methods being supported are: <ul><li>item1</li><li>item2</li></ul>
+</td>
 </tr>
-</thead>
-<tbody>
-<tr>
-<th scope="row">1</th>
-<td>Adam</td>
-</tr>
-</tbody>
 </table>
+
