@@ -80,6 +80,23 @@ https://github.com/StuartWheater/dsMicrobiomeClient.git
 </tr>
 </table>
 
+### Web-site/ftp-site/other
+<table>
+<tr>
+<td>-
+</td>
+</tr>
+</table>
+
+## What versions of R work with the package?
+
+<table>
+<tr>
+<td>R (>3.6.0)
+</td>
+</tr>
+</table>
+
 ## What R packages do the packages depend on?
 <table>
 <tr>
@@ -92,6 +109,62 @@ https://github.com/StuartWheater/dsMicrobiomeClient.git
 <td>dsMicrobiomeClient
 </td>
 <td>DSI (≥ 1.2.0)
+</td>
+</tr>
+</table>
+
+## Status
+<table>
+<tr>
+<td>Documented, tested and supported
+</td>
+</tr>
+</table>
+
+### Is the package tested?
+<table>
+<tr>
+<td>Yes
+</td>
+</tr>
+</table>
+
+### Is the package documented?
+<table>
+<tr>
+<td>Yes
+</td>
+</tr>
+</table>
+
+### Has the package had a disclosure audit?
+<table>
+<tr>
+<td>Yes
+</td>
+</tr>
+</table>
+
+## Is the package suitable for deployment in the production environment? (Yes/No)
+<table>
+<tr>
+<td>Yes
+</td>
+</tr>
+</table>
+
+## Does your package have features to protect the privacy of data, or does it just provide remote analysis functionality?
+<table>
+<tr>
+<td>Does privacy preserving analysis
+</td>
+</tr>
+</table>
+
+## Additional information
+<table>
+<tr>
+<td>-
 </td>
 </tr>
 </table>
