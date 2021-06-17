@@ -33,11 +33,11 @@
 ## Description of packages purpose
 <table>
 <tr>
-<td>Non-disclosive Machine learning functions. Currently the methods being supported are:
-    • PCA
-    • SVD
-    • K-means
-    • KNN
+<td>Non-disclosive Machine learning functions. Currently the methods being supported are: <br>
+    • PCA <br>
+    • SVD <br>
+    • K-means <br>
+    • KNN <br>
     • FAMD
 </td>
 </tr>
