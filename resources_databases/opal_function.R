@@ -1,4 +1,4 @@
-#' @Title Create resources in Opal
+#' @title Create resources in Opal
 #'
 #' @param file character route to the location of the resources
 #' @param porject character name of the project
