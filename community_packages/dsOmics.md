@@ -25,7 +25,7 @@
 ## Date this information was late updated/checked
 <table>
 <tr>
-<td>18/18/2020
+<td>15/06/2021
 </td>
 </tr>
 </table>
@@ -33,7 +33,19 @@
 ## Description of packages purpose
 <table>
 <tr>
-<td>The package is intended to be a collection of methods for microbiome analysis. Currently methods are wrappers around methods provided by the “vegan”. Currently the methods being supported are: <ul><li>item1</li><li>item2</li></ul>
+<td>Omics analysis. Currently the methods being supported are: <br>
+    • Differential expression analysis (RNAseq/microarray data): <br>
+        ◦ Voom + Limma <br>
+        ◦ DESeq2 <br>
+        ◦ edgeR <br>
+    • VCF data <br>
+        ◦ PCA of SNPs <br>
+        ◦ HWE test <br>
+        ◦ Allele frequencies <br>
+        ◦ Single SNP GLM <br>
+        ◦ GWAS <br>
+        ◦ PRS <br>
+    • PLINK
 </td>
 </tr>
 </table>
@@ -41,7 +53,9 @@
 ## How to contact developer institution/team/individual
 <table>
 <tr>
-<td>Stuart Wheater (stuart.wheater@newcastle.ac.uk)
+<td>Yannick Marcon (yannick.marcon@obiba.org ) <br>
+Xavier Escribà-Montagut (xavier.escriba@isglobal.org ) <br>
+Juan Ramón González (juanr.gonzalez@isglobal.org )
 </td>
 </tr>
 </table>
@@ -49,7 +63,7 @@
 ## Latest version
 <table>
 <tr>
-<td>1.0.2
+<td>1.0.5-5
 </td>
 </tr>
 </table>
@@ -57,7 +71,7 @@
 ## Type distribution licence
 <table>
 <tr>
-<td>Apache License 2.0
+<td>MIT + file LICENSE
 </td>
 </tr>
 </table>
@@ -74,8 +88,8 @@
 ### GitHub account, repository and branch/tag
 <table>
 <tr>
-<td>https://github.com/StuartWheater/dsMicrobiome.git <br>
-https://github.com/StuartWheater/dsMicrobiomeClient.git
+<td>https://github.com/isglobal-brge/dsExposome <br>
+https://github.com/isglobal-brge/dsExposomeClient
 </td>
 </tr>
 </table>
@@ -92,7 +106,7 @@ https://github.com/StuartWheater/dsMicrobiomeClient.git
 
 <table>
 <tr>
-<td>R (>3.6.0)
+<td>R >= 3.6.0
 </td>
 </tr>
 </table>
@@ -100,15 +114,26 @@ https://github.com/StuartWheater/dsMicrobiomeClient.git
 ## What R packages do the packages depend on?
 <table>
 <tr>
-<td>dsMicrobiome
+<td>dsOmics
 </td>
-<td>vegan (≥ 2.5-7)
+<td>Biobase <br>
+SNPRelate (>= 1.26.0) <br>
+GENESIS, <br>
+GWASTools <br>
+GenomicRanges <br>
+SummarizedExperiment <br>
+MEAL (>= 1.22.0) <br>
+knitr <br>
+DESeq2 <br>
+edgeR <br>
+dplyr <br>
+readr
 </td>
 </tr>
 <tr>
-<td>dsMicrobiomeClient
+<td>
 </td>
-<td>DSI (≥ 1.2.0)
+<td>
 </td>
 </tr>
 </table>
@@ -116,7 +141,7 @@ https://github.com/StuartWheater/dsMicrobiomeClient.git
 ## Status
 <table>
 <tr>
-<td>Documented, tested and supported
+<td>The package is still a work in progress. The current version is already being used “in production” to perform analysis on ExpressionSets of the LifeCycle project. This production version is being debugged by their input. 
 </td>
 </tr>
 </table>
@@ -124,7 +149,7 @@ https://github.com/StuartWheater/dsMicrobiomeClient.git
 ### Is the package tested?
 <table>
 <tr>
-<td>Yes
+<td>Being tested at the moment, with some previous testing already conducted.
 </td>
 </tr>
 </table>
@@ -132,7 +157,7 @@ https://github.com/StuartWheater/dsMicrobiomeClient.git
 ### Is the package documented?
 <table>
 <tr>
-<td>Yes
+<td>Yes, vignettes listed on the GitHub repository README
 </td>
 </tr>
 </table>
@@ -140,7 +165,7 @@ https://github.com/StuartWheater/dsMicrobiomeClient.git
 ### Has the package had a disclosure audit?
 <table>
 <tr>
-<td>Yes
+<td>No
 </td>
 </tr>
 </table>
@@ -148,7 +173,7 @@ https://github.com/StuartWheater/dsMicrobiomeClient.git
 ## Is the package suitable for deployment in the production environment? (Yes/No)
 <table>
 <tr>
-<td>Yes
+<td>Yes although some bugs may be expected.
 </td>
 </tr>
 </table>
@@ -156,7 +181,7 @@ https://github.com/StuartWheater/dsMicrobiomeClient.git
 ## Does your package have features to protect the privacy of data, or does it just provide remote analysis functionality?
 <table>
 <tr>
-<td>Does privacy preserving analysis
+<td>Yes, the results returned to the client are passed through filters or dsBase functions are used, which also have protection built to them. Nevertheless we may have missed some sensible elements, it is a work in progress.
 </td>
 </tr>
 </table>
