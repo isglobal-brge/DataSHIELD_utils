@@ -1,9 +1,3 @@
-library(opalr)
-
-
-
-
-
 #' @Title Create resources in Opal
 #'
 #' @param file character route to the location of the resources
@@ -29,18 +23,3 @@ createResource <- function(file, porject, opal){
                      format = "RangedSummarizedExperiment")
   }
 }
-
-
-
-o <- opal.login("administrator","password", 
-                url="https://opal-demo.obiba.org")
-
-createResource(file = "C:/Iker/ISGlobal/DataSHIELD_utils/resources_databases/recount2_resources.csv", 
-              project = "recount2", opal = o)
-
-opal.logout(o)
-
-
-
-
-
