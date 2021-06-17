@@ -33,12 +33,12 @@
 ## Description of packages purpose
 <table>
 <tr>
-<td>This package is mostly a wrapper of the rexposome package, which is an R package for exposome characterization and exopsome-outcome test association. The implemented functions are the ones that have a non-disclosive return or the output is treated to be non-disclosive. The main functionalities implemented are:
-    • Exploratory analysis of the exposome
-    • ExWAS
-    • Inverse ExWAS
-    • Exposures PCA
-    • Exposures HCPC
+<td>This package is mostly a wrapper of the rexposome package, which is an R package for exposome characterization and exopsome-outcome test association. The implemented functions are the ones that have a non-disclosive return or the output is treated to be non-disclosive. The main functionalities implemented are: <br>
+    • Exploratory analysis of the exposome <br>
+    • ExWAS <br>
+    • Inverse ExWAS <br>
+    • Exposures PCA <br>
+    • Exposures HCPC <br>
     • Exposures correlation
 </td>
 </tr>
