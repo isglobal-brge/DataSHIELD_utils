@@ -1,7 +1,7 @@
 ## Development name
 <table>
 <tr>
-<td>dsOmics
+<td>dsML
 </td>
 </tr>
 </table>
@@ -9,7 +9,7 @@
 ## Name of server-side packages
 <table>
 <tr>
-<td>dsOmics
+<td>dsML
 </td>
 </tr>
 </table>
@@ -17,7 +17,7 @@
 ## Name of client-side packages
 <table>
 <tr>
-<td>dsOmicsClient
+<td>dsMLClient
 </td>
 </tr>
 </table>
@@ -25,7 +25,7 @@
 ## Date this information was late updated/checked
 <table>
 <tr>
-<td>18/18/2020
+<td>15/06/2021
 </td>
 </tr>
 </table>
@@ -33,7 +33,12 @@
 ## Description of packages purpose
 <table>
 <tr>
-<td>The package is intended to be a collection of methods for microbiome analysis. Currently methods are wrappers around methods provided by the “vegan”. Currently the methods being supported are: <ul><li>item1</li><li>item2</li></ul>
+<td>Non-disclosive Machine learning functions. Currently the methods being supported are:
+    • PCA
+    • SVD
+    • K-means
+    • KNN
+    • FAMD
 </td>
 </tr>
 </table>
@@ -41,7 +46,7 @@
 ## How to contact developer institution/team/individual
 <table>
 <tr>
-<td>Stuart Wheater (stuart.wheater@newcastle.ac.uk)
+<td>Xavier Escribà-Montagut (xavier.escriba@isglobal.org )
 </td>
 </tr>
 </table>
@@ -49,7 +54,7 @@
 ## Latest version
 <table>
 <tr>
-<td>1.0.2
+<td>0.9
 </td>
 </tr>
 </table>
@@ -57,7 +62,7 @@
 ## Type distribution licence
 <table>
 <tr>
-<td>Apache License 2.0
+<td>MIT
 </td>
 </tr>
 </table>
@@ -74,8 +79,8 @@
 ### GitHub account, repository and branch/tag
 <table>
 <tr>
-<td>https://github.com/StuartWheater/dsMicrobiome.git <br>
-https://github.com/StuartWheater/dsMicrobiomeClient.git
+<td>https://github.com/isglobal-brge/dsML <br>
+https://github.com/isglobal-brge/dsMLClient
 </td>
 </tr>
 </table>
@@ -92,7 +97,7 @@ https://github.com/StuartWheater/dsMicrobiomeClient.git
 
 <table>
 <tr>
-<td>R (>3.6.0)
+<td>R ≥ 3.6.0
 </td>
 </tr>
 </table>
@@ -100,15 +105,16 @@ https://github.com/StuartWheater/dsMicrobiomeClient.git
 ## What R packages do the packages depend on?
 <table>
 <tr>
-<td>dsMicrobiome
+<td>dsML
 </td>
-<td>vegan (≥ 2.5-7)
+<td>mlr
+dsBase
 </td>
 </tr>
 <tr>
-<td>dsMicrobiomeClient
+<td>
 </td>
-<td>DSI (≥ 1.2.0)
+<td>
 </td>
 </tr>
 </table>
@@ -116,7 +122,7 @@ https://github.com/StuartWheater/dsMicrobiomeClient.git
 ## Status
 <table>
 <tr>
-<td>Documented, tested and supported
+<td>In beta. Some of the functionalities are solid but the package is not yet finished, more functionalities are expected to be included in the first formal release.
 </td>
 </tr>
 </table>
@@ -124,7 +130,7 @@ https://github.com/StuartWheater/dsMicrobiomeClient.git
 ### Is the package tested?
 <table>
 <tr>
-<td>Yes
+<td>No
 </td>
 </tr>
 </table>
@@ -132,7 +138,7 @@ https://github.com/StuartWheater/dsMicrobiomeClient.git
 ### Is the package documented?
 <table>
 <tr>
-<td>Yes
+<td>Yes, a vignette linked on the GitHub repository README
 </td>
 </tr>
 </table>
@@ -140,7 +146,7 @@ https://github.com/StuartWheater/dsMicrobiomeClient.git
 ### Has the package had a disclosure audit?
 <table>
 <tr>
-<td>Yes
+<td>No
 </td>
 </tr>
 </table>
@@ -148,7 +154,7 @@ https://github.com/StuartWheater/dsMicrobiomeClient.git
 ## Is the package suitable for deployment in the production environment? (Yes/No)
 <table>
 <tr>
-<td>Yes
+<td>No
 </td>
 </tr>
 </table>
@@ -156,7 +162,7 @@ https://github.com/StuartWheater/dsMicrobiomeClient.git
 ## Does your package have features to protect the privacy of data, or does it just provide remote analysis functionality?
 <table>
 <tr>
-<td>Does privacy preserving analysis
+<td>Yes, the implemented methods have built in features to protect the data returned to the client.
 </td>
 </tr>
 </table>
