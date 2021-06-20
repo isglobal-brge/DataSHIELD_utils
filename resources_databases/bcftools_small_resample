@@ -1,0 +1,17 @@
+Workflow:
+1) Subset .vcf.gz file by the first 10k SNPs
+bcftools query -f '%ID\n' my_vcf | head -10000 > ids.txt
+bcftools view -i "ID=@ids.txt" my_other_vcf
+
+2) Subset the small vcf into two new vcf files by samples (simulate two cohorts)
+bcftools view -S samples1.txt file.vcf > filtered1.vcf
+bcftools view -S samples2.txt file.vcf > filtered2.vcf
+
+3) Compress resulting vcf files
+bgzip -c filtered1.vcf > filtered1.vcf.gz
+
+File structure:
+  - From files chrX.vcf.gz
+  - Create:
+    - chrX_samplesA_small.vcf.gz
+    - chrX_samplesB_small.vcf.gz
