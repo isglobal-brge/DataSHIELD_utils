@@ -130,12 +130,6 @@ dplyr <br>
 readr
 </td>
 </tr>
-<tr>
-<td>
-</td>
-<td>
-</td>
-</tr>
 </table>
 
 ## Status
