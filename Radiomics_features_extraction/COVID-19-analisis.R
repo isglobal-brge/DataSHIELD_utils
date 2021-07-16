@@ -35,7 +35,7 @@ stats_control2 <- RIA:::list_to_df(control2$stat_fo$orig)
 stats_global <- data.frame(corona1 = stats_corona1,
                            corona2 = stats_corona2,
                            control1 = stats_control1,
-                           control2 = stats_control2,)
+                           control2 = stats_control2)
 
 # Cambiar el nombre de las columnas para cada individuo
 
