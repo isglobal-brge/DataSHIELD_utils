@@ -22,7 +22,7 @@ url.img <- tmp %>% html_nodes("tr") %>%
   html_attr("href")
 
 
-+img.cancer <- cancer %>% add_column(URL = url.img, .before = "Supporting Data")
+img.cancer <- cancer %>% add_column(URL = url.img, .before = "Supporting Data")
 
 write.table(x = img.cancer, file = "C:/Iker/ISGlobal/tabla_cancer.txt", sep = ",",
             row.names = FALSE, col.names = TRUE)
