@@ -49,41 +49,50 @@ write.table(stats_global, file = "C:/Iker/ISGlobal/Covid_features.txt", sep = "\
 
 # Importar las características
 
-rdr <- import_radiomic_table(file = "C:/Iker/ISGlobal/Covid_features.txt")
+rdr <- import_radiomic_table(file = "C:/Iker/ISGlobal/DataSHIELD_utils/Radiomics_features_extraction/stats_global.tsv")
 
 
 # Crear una tabla con el identificador de cada paciente y su estado
 
-clinical <- data.frame(PatientID = c("corona1", "corona2", "control1", "control2"),
-                       covid_status = c("covid", "covid", "no_covid", "no_covid"))
-
+clinical <- data.frame(PatientID = c("corona1", "corona2", "corona3", "corona4", "corona5",
+                                     "corona6", "corona7", "corona8", "corona9", "corona10",
+                                     "control1", "control2", "control3", "control5",
+                                     "control6", "control7", "control9", "control10"),
+                       covid_status = c("covid", "covid", "covid", "covid", "covid",
+                                        "covid", "covid", "covid", "covid", "covid",
+                                        "no_covid", "no_covid", "no_covid",
+                                        "no_covid", "no_covid", "no_covid", "no_covid", "no_covid"))
 colData(rdr) <- cbind(colData(rdr), clinical)
 
+#
+
+features.nodup <- assays(rdr)$values[-which(apply(assays(rdr)$values, 1, function(x){length(unique(x)) == 1})),]
+
+rdr_2 <- SummarizedExperiment::SummarizedExperiment(assays = list(values = features.nodup), 
+                                                    rowData = data.frame(feature_name = rownames(features.nodup)), colData = colnames(features.nodup), 
+                                                    metadata = metadata(rdr))
+
+colData(rdr_2) <- cbind(colData(rdr_2), clinical)
 
 # Ver la correlación de las features
 
-
-plot_correlation_matrix(rdr = rdr, 
+plot_correlation_matrix(rdr = rdr_2, 
                         method_correlation = "spearman", 
                         view_as = "heatmap", 
                         which_data = "normal")
 
 # 
 
-rdr <- scale_feature_values(rdr = rdr, method = "minmax")
+rdr_2 <- scale_feature_values(rdr = rdr_2, method = "minmax")
 
-rdr
 
 # AGRUPAMIENTO DE CARACTERÍSTICAS
 
-print_distance_methods()
-print_hcl_methods()
+rdr_2 <- do_hierarchical_clustering(rdr = rdr_2,
+                                    which_data = "scaled",
+                                    method_dist_col = "correlation.spearman")
 
-rdr <- do_hierarchical_clustering(rdr = rdr, 
-                                  which_data = "scaled", 
-                                  method_dist_col = "correlation.spearman")
-
-plot_heatmap_hcl(rdr = rdr, 
+plot_heatmap_hcl(rdr = rdr_2, 
                  annotation_tracks = c("covid_status"))
 
 

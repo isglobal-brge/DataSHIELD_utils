@@ -275,10 +275,21 @@ clinical <- data.frame(PatientID = c("corona1", "corona2", "corona3", "corona4",
 colData(rdr) <- cbind(colData(rdr), clinical)
 ```
 
+Eliminar las filas sobrantes para poder ejecutar el código de manera correcta
+
+```{r, eval=TRUE}
+features.nodup <- assays(rdr)$values[-which(apply(assays(rdr)$values, 1, function(x){length(unique(x)) == 1})),]
+
+rdr_2 <- SummarizedExperiment::SummarizedExperiment(assays = list(values = features.nodup), 
+                                                    rowData = data.frame(feature_name = rownames(features.nodup)), colData = colnames(features.nodup),metadata = metadata(rdr))
+
+colData(rdr_2) <- cbind(colData(rdr_2), clinical)
+```
+
 Ver la correlación de las features
 
 ```{r, eval=TRUE}
-plot_correlation_matrix(rdr = rdr, 
+plot_correlation_matrix(rdr = rdr_2, 
                         method_correlation = "spearman", 
                         view_as = "heatmap", 
                         which_data = "normal")
@@ -287,17 +298,17 @@ plot_correlation_matrix(rdr = rdr,
 Escalar los valores de las features
 
 ```{r, eval=TRUE}
-rdr <- scale_feature_values(rdr = rdr, method = "minmax")
+rdr_2 <- scale_feature_values(rdr = rdr_2, method = "minmax")
 ```
 
 Agrupamiento de características
 
 ```{r, eval=TRUE}
-rdr <- do_hierarchical_clustering(rdr = rdr, 
-                                  which_data = "scaled", 
-                                  method_dist_col = "correlation.spearman")
+rdr_2 <- do_hierarchical_clustering(rdr = rdr_2,
+                                    which_data = "scaled",
+                                    method_dist_col = "correlation.spearman")
 
-plot_heatmap_hcl(rdr = rdr, 
+plot_heatmap_hcl(rdr = rdr_2, 
                  annotation_tracks = c("covid_status"))
 ```
 
