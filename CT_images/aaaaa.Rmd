@@ -1,0 +1,19 @@
+---
+title: "CT_scans_repositories"
+author: "Iker González Tirado"
+date: "22/7/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(ggplot2)
+```
+
+```{r}
+write.table(stats_global, file = "C:/Iker/ISGlobal/DataSHIELD_utils/CT_images/CT_scans_table.ods")
+```
+
