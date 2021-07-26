@@ -7,3 +7,6 @@
 - Databases of different resources
      + GTEx RNAseq from recount2 (gene and exon expression levels)
      + TCGA RNAseq from recount2 (gene and exon expression levels)
+     + Table with cancer types from Cancer Imaging Archive
+     + Radiomics summary, example and analysis
+     + GitHub repositories with computed tomography scans resources
