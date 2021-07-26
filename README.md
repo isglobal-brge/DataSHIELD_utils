@@ -1,7 +1,7 @@
 # DataSHIELD utilites of BRGE
 
 - Community help pages of BRGE DS packages
-     + dsOmics
+     + [dsOmics](https://github.com/isglobal-brge/DataSHIELD_utils/blob/main/community_packages/dsOmics.md)
      + dsExposome
      + dsML
 - Databases of different resources
