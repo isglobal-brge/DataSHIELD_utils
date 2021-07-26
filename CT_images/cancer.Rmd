@@ -2,7 +2,11 @@
 title: "Cancer imaging table"
 author: "Iker González Tirado"
 date: "14/7/2021"
-output: html_document
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Cancer imaging table}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
 ---
 
 ```{r setup, include=FALSE}

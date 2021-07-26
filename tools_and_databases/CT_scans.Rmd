@@ -2,7 +2,11 @@
 title: "CT scans table"
 author: "Iker González Tirado"
 date: "23/7/2021"
-output: html_document
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{CT scans table}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
 ---
 
 ```{r setup, include=FALSE}

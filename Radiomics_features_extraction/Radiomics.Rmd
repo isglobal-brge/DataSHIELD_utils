@@ -2,7 +2,11 @@
 title: "Resumen Radiomics"
 author: "Iker González Tirado"
 date: "28/6/2021"
-output: html_document
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Resumen Radiomics}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
 ---
 
 ```{r setup, include=FALSE}
