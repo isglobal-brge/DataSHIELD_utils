@@ -158,10 +158,7 @@ image <- readNifti("C:/Iker/ISGlobal/COVID-19/coronacases_001.nii.gz")
 view(image)
 ```
 
-![Imagen de un pulmón mediante CT Scan](ct_lung.png)
-
-
-Calcular las Radiomic features para diez indiv
+![Imagen de un pulmón mediante CT Scan](ct_lung.png){width=550px}
 
 
 Calcular las características de tipo first-order.
